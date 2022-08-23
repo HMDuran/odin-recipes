@@ -2,5 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fef8f1
+}
+
+body {
+    height: 100vh;
+    background-image: url("/assets/img/bg-img/bg-index.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
