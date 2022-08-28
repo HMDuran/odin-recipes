@@ -6,7 +6,7 @@
 
 button {
     background: #452e20;
-    font-size: 26px;
+    font-size: 30px;
     border: none;
     padding: 0.5em 0.8em 0.5em 0.8em;
     border-radius: 10px;
@@ -15,7 +15,7 @@ button {
 }
 
 button:hover {
-    background: #f3a63f;
+    background-color: #f3a63f;
 }
 
 body .container main {
@@ -25,12 +25,17 @@ body .container main {
     background-image: url("/assets/img/bg-img/bg-index.png");
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 body .container main .title {
+    font-size: 65px;
     color: #f3a63f;
 }
 
 body .container main .description {
+    font-size: 40px;
     color: #ffffff;
 }
