@@ -26,3 +26,25 @@ body .container main {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+body .container main .title {
+    color: #f3a63f;
+}
+
+body .container main .items {
+    display: flex;
+    justify-content: center;
+}
+
+body .container main .items .box {
+    background-color: #ffffff;
+    width: 410px;
+    height: 500px;
+    margin: 15px;
+}
+
+body .container main .items .box .image {
+    background-color: #f3a63f;
+    height: 250px;
+    margin-bottom: 15px;
+}
