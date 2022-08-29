@@ -6,7 +6,7 @@
 
 button {
     background: #452e20;
-    font-size: 30px;
+    font-size: 35px;
     border: none;
     padding: 0.5em 0.8em 0.5em 0.8em;
     border-radius: 10px;
@@ -31,11 +31,18 @@ body .container main {
 }
 
 body .container main .title {
-    font-size: 65px;
+    font-family: 'Lemonada', cursive;
+    font-size: 48px;
+    text-shadow: 10px 10px 10px #000000;
     color: #f3a63f;
 }
 
-body .container main .description {
+body .container main .description p {
+    padding: 5px;
     font-size: 40px;
     color: #ffffff;
+}
+
+body .container main .description button {
+    padding: 10px;
 }
