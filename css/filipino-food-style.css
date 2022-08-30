@@ -28,6 +28,7 @@ body .container main {
 }
 
 body .container main .title {
+
     color: #f3a63f;
 }
 
@@ -37,6 +38,7 @@ body .container main .items {
 }
 
 body .container main .items .box {
+    border-radius: 10px;
     background-color: #ffffff;
     width: 410px;
     height: 500px;
@@ -52,4 +54,12 @@ body .container main .items .box .image {
 
 body .container main .items .box .one {
     background-image: url('/assets/img/food-img/chicken-adobo-img.png');
+}
+
+body .container main .items .box .two {
+    background-image: url('/assets/img/food-img/caldereta-img.png');
+}
+
+body .container main .items .box .three {
+    background-image: url('/assets/img/food-img/kare-kare-img.png');
 }
