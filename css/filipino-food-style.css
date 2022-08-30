@@ -47,4 +47,9 @@ body .container main .items .box .image {
     background-color: #f3a63f;
     height: 250px;
     margin-bottom: 15px;
+    background-size: cover;
+}
+
+body .container main .items .box .one {
+    background-image: url('/assets/img/food-img/chicken-adobo-img.png');
 }
