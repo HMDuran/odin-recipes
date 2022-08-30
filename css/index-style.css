@@ -6,9 +6,9 @@
 
 button {
     background: #452e20;
-    font-size: 35px;
+    font-family: 'Paytone One', sans-serif;
+    font-size: 30px;
     border: none;
-    padding: 0.5em 0.8em 0.5em 0.8em;
     border-radius: 10px;
     color: #ffffff;
     cursor: pointer;
@@ -20,14 +20,12 @@ button:hover {
 
 body .container main {
     height: 100vh;
-    width: 100vw;
     text-align: center;
+    display: grid;
+    place-content: center;
     background-image: url("/assets/img/bg-img/bg-index.png");
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 body .container main .title {
@@ -38,11 +36,12 @@ body .container main .title {
 }
 
 body .container main .description p {
-    padding: 5px;
-    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
     color: #ffffff;
 }
 
 body .container main .description button {
+    margin: 5px;
     padding: 10px;
 }
