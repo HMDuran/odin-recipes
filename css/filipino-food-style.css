@@ -28,7 +28,8 @@ body .container main {
 }
 
 body .container main .title {
-
+    font-family: 'Lemonada', cursive;
+    font-size: 20px;
     color: #f3a63f;
 }
 
@@ -62,4 +63,12 @@ body .container main .items .box .two {
 
 body .container main .items .box .three {
     background-image: url('/assets/img/food-img/kare-kare-img.png');
+}
+
+body .container main .items .box h3 {
+    font-family: 'Lemonada', cursive;
+}
+
+body .container main .items .box p {
+    font-family: sans-serif;
 }
