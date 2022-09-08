@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 button {
     background: #452e20;
     font-family: 'Paytone One', sans-serif;
@@ -23,25 +27,60 @@ body .container main {
     text-align: center;
     display: grid;
     place-content: center;
-    background-image: url("/assets/img/bg-img/bg-index.png");
+    background-image: url("/assets/img/bg-img/bg.png");
     background-position: center;
     background-repeat: no-repeat;
 }
 
-body .container main .title {
+body .container main nav {
+    /* Top Right Bottom Left */
+    padding: 3em 1em 2em 1em;
+    /* Layout */
+    display: flex;
+    justify-content: space-around;
+}
+
+body .container main nav .menu {
+    /* Layout */
+    display: flex;
+    gap: 1em;
+}
+
+body .container main nav .menu li {
+    font-weight: 400;
+    text-align: end;
+}
+
+body .container main nav .menu li:hover {
+    color: #ffaaff;
+    cursor: pointer;
+}
+
+body .container main section.hero {
+    margin-top: -1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body .container main section.hero .text {
+    margin-left: 15vw;
+}
+
+body .container main section.hero .text h1 {
     font-family: 'Lemonada', cursive;
     font-size: 48px;
     text-shadow: 10px 10px 10px #000000;
     color: #f3a63f;
 }
 
-body .container main .description p {
+body .container main section.hero .description p {
     font-family: 'Playfair Display', serif;
     font-size: 35px;
     color: #ffffff;
 }
 
-body .container main .description button {
+body .container main section.hero .description button {
     margin: 5px;
     padding: 10px;
 }
