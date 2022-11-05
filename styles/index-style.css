@@ -5,6 +5,9 @@
     --font-one: 'Lemonada', cursive;
     --font-two: 'Playfair Display', serif;
     --font-three: 'Paytone One';
+    --font-color-green: #041704;
+    --font-color-white: #fafafa;
+    --font-color-black: #333333;
 }
 
 * {
@@ -15,23 +18,34 @@
 
 h1 {
     font-family: var(--font-one);
+    color: var(--font-color-green);
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+h1:hover {
+    color: var(--bg-green);
 }
 
 p {
     font-family: var(--font-two);
-    ;
+    color: var(--font-color-white);
+    font-size: 2rem;
 }
 
 button {
     width: 180px;
     padding: 15px 25px;
-    color: var(--bg-white);
+    color: var(--font-color-white);
     background-color: var(--bg-green);
     border: none;
     border-radius: 5px;
-    font-size: 12px;
+    font-family: var(--font-three);
+    font-size: 1rem;
     text-transform: uppercase;
     max-width: 16em;
+    height: 3.5em;
+    letter-spacing: 0.5px;
 }
 
 button:hover {
@@ -67,13 +81,31 @@ body {
 }
 
 .container main .box .box-content {
-    padding: 2em;
+    line-height: 1.5;
+    margin: 1em;
+    padding: 2.8em;
     display: grid;
     grid-template-rows: auto;
-    justify-content: center;
-    gap: 1;
+    place-items: center;
 }
 
-.container main .box .box-content .text {
-    padding: 2em;
+.container main .box .box-content .title-text {
+    height: 120px;
+    padding: 1em;
+}
+
+.container main .box .box-content .description {
+    height: 180px;
+    padding: 1.5em;
+    text-align: center;
+}
+
+#line-break::before {
+    content: "\a";
+    white-space: pre;
+}
+
+.container main .box .box-content .button {
+    height: 100px;
+    padding: 1.5em;
 }
