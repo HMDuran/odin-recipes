@@ -1,8 +1,9 @@
 :root {
     --bg-green: #3e663e;
-    --bg-white: #fafafa;
-    --font-one: 'Lemonada';
-    --font-two: 'Playfair Display';
+    --bg-white: rgba(255, 255, 255, 0.5);
+    --bg-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --font-one: 'Lemonada', cursive;
+    --font-two: 'Playfair Display', serif;
     --font-three: 'Paytone One';
 }
 
@@ -10,6 +11,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--font-one);
+}
+
+p {
+    font-family: var(--font-two);
+    ;
+}
+
+button {
+    width: 180px;
+    padding: 15px 25px;
+    color: var(--bg-white);
+    background-color: var(--bg-green);
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    max-width: 16em;
+}
+
+button:hover {
+    color: var(--bg-green);
+    background-color: var(--bg-white);
+    cursor: pointer;
 }
 
 body {
@@ -32,15 +60,20 @@ body {
 
 .container main .box {
     background-color: var(--bg-white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--bg-shadow);
     border-radius: 15px;
     height: 520px;
     width: 1255px;
 }
 
 .container main .box .box-content {
+    padding: 2em;
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
+    gap: 1;
+}
 
+.container main .box .box-content .text {
+    padding: 2em;
 }
