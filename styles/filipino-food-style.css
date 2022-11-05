@@ -112,6 +112,12 @@ body {
     flex-direction: column;
     height: 550px;
     width: 345px;
+    transition: all .3s ease-in-out;
+}
+
+.box .box-content:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bg-shadow);
 }
 
 .box .box-content img {
