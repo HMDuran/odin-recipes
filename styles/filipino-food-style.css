@@ -6,9 +6,127 @@
     box-sizing: border-box;
 }
 
-body {
-    align-items: center;
-    position: relative;
-    height: 100%;
+h3 {
+    font-family: var(--font-one);
+    color: var(--font-color-green);
+    font-size: 1.5rem;
+    padding: 0.2em;
+}
+
+p {
+    font-family: var(--font-two);
+    color: var(--font-color-black);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.8em;
+    width: 350px;
+    line-height: 1.2;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: (--font-color-black);
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    padding-top: 0.6em;
+    gap: 1px;
+}
+
+li {
+    width: 120px;
+    list-style: none;
+    place-items: center;
+    font-family: var(--font-two);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 1.2;
+}
+
+span {
+    color: var(--font-color-black);
+    text-align: center;
+}
+
+span::before {
+    content: "\a";
+    white-space: pre;
+}
+
+button {
+    width: 150px;
+    color: var(--font-color-white);
     background-color: var(--bg-green);
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-three);
+    font-size: 1rem;
+    max-width: 16em;
+    height: 2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+button:hover {
+    color: var(--bg-green);
+    background-color: var(--bg-black);
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-green);
+}
+
+.container {
+    padding: 1em;
+}
+
+.container main {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    place-items: center center;
+}
+
+.box {
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+    gap: 50px;
+}
+
+.box .box-content {
+    background-color: var(--bg-card-color);
+    box-shadow: var(--bg-shadow);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 345px;
+}
+
+.box .box-content img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 285px;
+    width: auto;
+}
+
+.box .box-content .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-content .text ul li .bold {
+    font-weight: bold;
 }
