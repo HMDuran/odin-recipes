@@ -1,14 +1,4 @@
-:root {
-    --bg-green: #3e663e;
-    --bg-white: rgba(255, 255, 255, 0.5);
-    --bg-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    --font-one: 'Lemonada', cursive;
-    --font-two: 'Playfair Display', serif;
-    --font-three: 'Paytone One';
-    --font-color-green: #041704;
-    --font-color-white: #fafafa;
-    --font-color-black: #333333;
-}
+@import "./custom-properties-style.css";
 
 * {
     margin: 0;
