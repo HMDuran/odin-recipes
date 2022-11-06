@@ -1,14 +1,163 @@
+@import "./custom-properties-style.css";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body .container main {
-    height: 100vh;
-    width: 100vw;
+h2 {
+    font-family: var(--font-one);
+    color: var(--font-color-green);
+    font-weight: 700;
+    font-size: 3rem;
     text-align: center;
-    background-image: url("/assets/img/bg-img/bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
+}
+
+h3 {
+    font-family: var(--font-one);
+    color: var(--font-color-green);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--font-two);
+    color: var(--font-color-black);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1.5em;
+    width: 1100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-green);
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.container main {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.container main .contents {
+    position: relative;
+    margin: 0 auto;
+    background-color: var(--bg-white);
+    box-shadow: var(--bg-shadow);
+    border-radius: 15px;
+    width: 1100px;
+    height: fit-content;
+}
+
+.container main .contents .dish img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 1100px;
+    height: 500px;
+}
+
+.container main .contents .dish .dish-name {
+    position: absolute;
+    top: 394px;
+    background: var(--bg-light);
+    width: 100%;
+    padding: 20px;
+}
+
+.container main .contents .recipe-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 1.5em;
+}
+
+.container main .contents .recipe-content .ingredients {
+    padding-left: 2.5em;
+    width: 450px;
+    line-height: 2;
+}
+
+.container main .contents .recipe-content .ingredients ul {
+    padding-left: 3em;
+}
+
+.container main .contents .recipe-content .ingredients li {
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+}
+
+.container main .contents .recipe-content .vertical-line {
+    width: 0.5px;
+    background-color: var(--font-color-light-black);
+}
+
+.container main .contents .recipe-content .instructions {
+    width: 500px;
+    padding-left: 0.5em;
+    line-height: 2;
+}
+
+.container main .contents .recipe-content .instructions ul li {
+    list-style: none;
+}
+
+.container main .contents .recipe-content .instructions .steps {
+    line-height: 7;
+    position: absolute;
+}
+
+.container main .contents .recipe-content .instructions .steps li {
+    position: relative;
+    right: 30px;
+    font-family: var(--font-one);
+    font-size: 1.4rem;
+    color: var(--font-color-green);
+    font-weight: 700;
+    transform: rotate(-90deg);
+}
+
+.step-one,
+.step-two,
+.step-three,
+.step-four {
+    position: absolute;
+}
+
+.step-one {
+    bottom: 20px;
+}
+
+.step-two {
+    bottom: 5px;
+}
+
+.step-three {
+    bottom: -1.5px;
+}
+
+.step-four {
+    bottom: 30px;
+}
+
+.container main .contents .recipe-content .instructions .steps-description {
+    padding-left: 2.5em;
+
+}
+
+.container main .contents .recipe-content .instructions .steps-description li {
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+    color: var(--font-color-black);
+    font-weight: 400;
+    line-height: 1.5;
 }
