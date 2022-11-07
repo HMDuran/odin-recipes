@@ -8,9 +8,13 @@
 
 h3 {
     font-family: var(--font-one);
-    color: var(--font-color-green);
+    color: var(--bg-green);
     font-size: 1.5rem;
     padding: 0.2em;
+}
+
+h3:hover {
+    color: var(--font-color-green);
 }
 
 p {
@@ -60,7 +64,7 @@ span::before {
 
 button {
     width: 150px;
-    color: var(--font-color-white);
+    color: var(--font-color-button);
     background-color: var(--bg-green);
     border: none;
     border-radius: 5px;
