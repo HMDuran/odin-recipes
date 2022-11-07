@@ -8,10 +8,14 @@
 
 h2 {
     font-family: var(--font-one);
-    color: var(--font-color-green);
+    color: var(--bg-green);
     font-weight: 700;
     font-size: 3rem;
     text-align: center;
+}
+
+h2:hover {
+    color: var(--font-color-green);
 }
 
 h3 {
@@ -98,7 +102,7 @@ body {
 
 .container main .contents .recipe-content .vertical-line {
     width: 0.5px;
-    background-color: var(--font-color-light-black);
+    background-color: var(--vertical-line-color);
 }
 
 .container main .contents .recipe-content .instructions {
