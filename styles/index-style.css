@@ -19,23 +19,23 @@ h1:hover {
 
 p {
     font-family: var(--font-two);
-    color: var(--font-color-white);
+    color: var(--font-color-black);
     font-size: 2rem;
 }
 
 button {
     width: 180px;
-    padding: 15px 25px;
-    color: var(--font-color-white);
+    color: var(--font-color-button);
     background-color: var(--bg-green);
     border: none;
     border-radius: 5px;
     font-family: var(--font-three);
     font-size: 1rem;
+    font-weight: 500;
     text-transform: uppercase;
     max-width: 16em;
     height: 3.5em;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
 }
 
 button:hover {
@@ -68,6 +68,12 @@ body {
     border-radius: 15px;
     height: 520px;
     width: 1255px;
+    transition: all .3s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: var(--bg-shadow);
 }
 
 .container main .box .box-content {
