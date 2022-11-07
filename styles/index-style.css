@@ -8,13 +8,13 @@
 
 h1 {
     font-family: var(--font-one);
-    color: var(--font-color-green);
+    color: var(--bg-green);
     font-size: 5rem;
     text-transform: uppercase;
 }
 
 h1:hover {
-    color: var(--bg-green);
+    color: var(--font-color-green);
 }
 
 p {
